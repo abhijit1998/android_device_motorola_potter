@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/revengeos_potter.mk
+    $(LOCAL_DIR)/fred_potter.mk

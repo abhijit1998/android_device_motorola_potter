@@ -19,19 +19,14 @@
 $(call inherit-product, device/motorola/potter/full_potter.mk)
 
 # Inherit some common RevengeOS stuff.
-IS_PHONE := true
-TARGET_GAPPS_ARCH := arm64
-TARGET_MINIMAL_GAPPS := true
-REVENGEOS_BUILDTYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit some common RevengeOS stuff.
-$(call inherit-product, vendor/revengeos/config/common.mk)
-$(call inherit-product, vendor/revengeos/config/gsm.mk)
+$(call inherit-product, vendor/fred/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := potter
-PRODUCT_NAME := revengeos_potter
+PRODUCT_NAME := fred_potter
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_MODEL := Moto G5 Plus
